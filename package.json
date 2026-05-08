@@ -1,0 +1,62 @@
+{
+  "name": "use-deepgram",
+  "version": "0.0.91",
+  "description": "Use deepgram to capture speech, convert it to text. Records audio in browser without additional hassles",
+  "keywords": [
+    "react",
+    "typescript",
+    "deepgram",
+    "speech-to-text"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "homepage": "https://github.com/s3kfm/use-deepgram-flux",
+  "author": "s3kfm",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:s3kfm/use-deepgram-flux.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@deepgram/sdk": "^5.1.0",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.2.14",
+    "attw": "^1.0.0",
+    "jsdom": "^29.0.2",
+    "prettier": "^3.3.3",
+    "react": "^19.2.5",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^4.1.4"
+  },
+  "peerDependencies": {
+    "@deepgram/sdk": "^5.1.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "@deepgram/sdk": {
+      "optional": false
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "ci": "npm run build && npm run check-exports && npm run lint && npm run test",
+    "lint": "tsc",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "check-exports": "attw --pack .",
+    "prepublishOnly": "npm run ci"
+  }
+}
