@@ -1,9 +1,9 @@
-# use-deepgram-flux
+# use-deepgram
 
 
-[![npm version](https://img.shields.io/npm/v/use-deepgram-flux?color=05ef81&labelColor=000000)](https://www.npmjs.com/package/use-deepgram-flux)
-[![npm downloads](https://img.shields.io/npm/dm/use-deepgram-flux?color=05ef81&labelColor=000000)](https://www.npmjs.com/package/use-deepgram-flux)
-[![license](https://img.shields.io/npm/l/use-deepgram-flux?color=05ef81&labelColor=000000)](https://github.com/s3kfm/use-deepgram-flux/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/use-deepgram?color=05ef81&labelColor=000000)](https://www.npmjs.com/package/use-deepgram)
+[![npm downloads](https://img.shields.io/npm/dm/use-deepgram?color=05ef81&labelColor=000000)](https://www.npmjs.com/package/use-deepgram)
+[![license](https://img.shields.io/npm/l/use-deepgram?color=05ef81&labelColor=000000)](https://github.com/s3kfm/use-deepgram/blob/main/LICENSE)
 
 A lightweight, performant React hook for building real-time voice applications using **Deepgram Flux**. This hook manages the complexity of web audio streams and WebSockets, providing a simple event-driven interface for conversational AI.
 
@@ -17,7 +17,7 @@ A lightweight, performant React hook for building real-time voice applications u
 ## Installation
 
 ```bash
-npm install use-deepgram-flux @deepgram/sdk
+npm install use-deepgram @deepgram/sdk
 ```
 
 > **Note:** `@deepgram/sdk` is a peer dependency. Ensure it is installed in your project to keep the hook package lightweight.
@@ -27,7 +27,7 @@ npm install use-deepgram-flux @deepgram/sdk
 Integrating Flux into your AI Voice Agent is straightforward:
 
 ```tsx
-import { useDeepgramFlux } from 'use-deepgram-flux';
+import { useDeepgramFlux } from 'use-deepgram';
 
 function VoiceAssistant() {
   const { 

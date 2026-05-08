@@ -15,11 +15,11 @@
       "require": "./dist/index.cjs"
     }
   },
-  "homepage": "https://github.com/s3kfm/use-deepgram-flux",
+  "homepage": "https://github.com/s3kfm/use-deepgram",
   "author": "s3kfm",
   "repository": {
     "type": "git",
-    "url": "git@github.com:s3kfm/use-deepgram-flux.git"
+    "url": "git@github.com:s3kfm/use-deepgram.git"
   },
   "license": "MIT",
   "files": [
