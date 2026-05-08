@@ -36,7 +36,7 @@ function VoiceAssistant() {
     interimTranscript, 
     error 
   } = useDeepgramFlux({
-    token: 'YOUR_DEEPGRAM_API_KEY',
+    token: 'GENERATED_TOKEN_FROM_DEEPGRAM',
     onTurnStart: (text) => console.log("User started speaking..."),
     onUpdate: (text) => console.log("Live update:", text),
     onTurnEnd: (text) => {
